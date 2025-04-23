@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  list-style: none;
+  /* Rimuove i pallini della lista */
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: gray;
+  box-sizing: border-box;
+}
+
+.card {
+  width: calc(25% - 10px);
+  /* 4 per riga, con gap */
+  background-color: wheat;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}

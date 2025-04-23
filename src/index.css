@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 
-.container {
+/* .container {
   list-style: none;
-  /* Rimuove i pallini della lista */
   padding: 10px;
   margin: 0;
   display: flex;
@@ -18,10 +17,9 @@
 
 .card {
   width: calc(25% - 10px);
-  /* 4 per riga, con gap */
   background-color: wheat;
   border: 1px solid black;
   box-sizing: border-box;
   text-align: center;
   padding: 10px;
-}
+} */

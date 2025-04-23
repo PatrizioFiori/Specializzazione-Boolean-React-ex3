@@ -43,19 +43,6 @@ export default App
 
 
 /*
-
 📌 Milestone 1: Recuperare e visualizzare i dati
-
-- chiamata API https://boolean-spec-frontend.vercel.app/freetestapi/politicians
-- Salva la risposta in uno stato React (useState).
-- Creare card per mostrare le seguenti info sui politici 
-Nome (name)
-Immagine (image)
-Posizione (position)
-Breve biografia (biography)
-
 Obiettivo: Caricare e mostrare i politici in un’interfaccia chiara e leggibile.
-
-
-
 */

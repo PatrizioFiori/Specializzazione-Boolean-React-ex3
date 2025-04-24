@@ -20,14 +20,18 @@ const App = () => {
 
   return (
     <>
-      <div className='navbar bg-dark py-3 px-5 d-flex justify-content-between align-items-center'>
-        <h3 className='text-white mb-0'>POLITICI</h3>
-        <input
-          className="form-control w-25 ms-3"
-          type="text"
-          placeholder="Cerca i politici..."
-        />
+      <div className="navbar bg-dark py-3 px-4 shadow-sm">
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+          <h3 className="text-white mb-0">🌍 POLITICI</h3>
+          <input
+            type="text"
+            className="form-control w-50 w-md-25 ms-3"
+            placeholder="🔍 Cerca i politici..."
+            style={{ maxWidth: "500px" }}
+          />
+        </div>
       </div>
+
 
       <div className='container mt-4'>
         <div className='row g-4'>
@@ -65,7 +69,8 @@ Obiettivo: Caricare e mostrare i politici in un’interfaccia chiara e leggibile
 
 📌 Milestone 2: Implementare la ricerca ottimizzata
 Aggiungi un campo di ricerca (<input type="text">) sopra la lista dei politici.
-Permetti all’utente di filtrare i risultati in base a nome o biografia (se il testo cercato è incluso). Suggerimento: Creare un array derivato filtrato, che viene aggiornato solo quando cambia la lista di politici o il valore della ricerca.
+Permetti all’utente di filtrare i risultati in base a nome o biografia (se il testo cercato è incluso). 
+Suggerimento: Creare un array derivato filtrato, che viene aggiornato solo quando cambia la lista di politici o il valore della ricerca.
 ❌ Non usare useEffect per aggiornare l’array filtrato.
 
 Obiettivo: Migliorare le prestazioni evitando ricalcoli inutili quando il valore della ricerca non cambia.

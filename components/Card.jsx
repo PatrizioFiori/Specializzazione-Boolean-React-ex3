@@ -2,7 +2,7 @@ import React from "react"
 
 
 const Card = React.memo(({ politico }) => {
-    console.log("Rendering Card for:", politico.name);  // Log ogni volta che il componente viene renderizzato
+    //onsole.log("Rendering Card for:", politico.name);  // Log ogni volta che il componente viene renderizzato
 
     return (
         <div className='card h-100 shadow-sm text-center'>

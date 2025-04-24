@@ -8,3 +8,6 @@
 
 📌 Milestone 3: Ottimizzare il rendering delle card con React.memo
 **Obiettivo**: Se la lista filtrata cambia, solo le nuove card devono essere renderizzate, mentre le altre rimangono in memoria senza essere ridisegnate.
+
+🎯 Bonus: Filtrare anche per posizione politica (position)
+

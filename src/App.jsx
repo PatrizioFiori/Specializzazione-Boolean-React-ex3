@@ -1,4 +1,5 @@
 import { useState, useReducer, useEffect, useMemo } from 'react'
+import Card from '../components/card'
 
 const App = () => {
 
@@ -45,19 +46,7 @@ const App = () => {
         <div className='row g-4'>
           {politiciFiltrati.map(politico => (
             <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={politico.id}>
-              <div className='card h-100 shadow-sm text-center'>
-                <img
-                  src={politico.image}
-                  className="card-img-top d-block mx-auto"
-                  alt="immagine"
-                  style={{ height: "250px", width: "200px", objectFit: "cover" }}
-                />
-                <div className='card-body'>
-                  <h5 className="card-title">{politico.name}</h5>
-                  <h6>{politico.country} - {politico.position}</h6>
-                  <p className="card-text">{politico.biography}</p>
-                </div>
-              </div>
+              <Card politico={politico} />
             </div>
           ))}
         </div>
@@ -77,5 +66,8 @@ Obiettivo: Caricare e mostrare i politici in un’interfaccia chiara e leggibile
 
 📌 Milestone 2: Implementare la ricerca ottimizzata
 Obiettivo: Migliorare le prestazioni evitando ricalcoli inutili quando il valore della ricerca non cambia.
+
+📌 Milestone 3: Ottimizzare il rendering delle card con React.memo
+Obiettivo: Se la lista filtrata cambia, solo le nuove card devono essere renderizzate, mentre le altre rimangono in memoria senza essere ridisegnate.
 
 */
